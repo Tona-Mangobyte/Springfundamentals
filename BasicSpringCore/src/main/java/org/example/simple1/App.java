@@ -1,15 +1,9 @@
-package org.example;
+package org.example.simple1;
 
-import org.example.config.SimpleConfig;
-import org.example.model.Hello;
-import org.example.services.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.example.simple1.SimpleConfig;
+import org.example.simple1.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Hello world!

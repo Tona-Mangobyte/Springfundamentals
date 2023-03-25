@@ -1,8 +1,4 @@
-package org.example.services;
-
-import org.example.repositories.UserRepository;
-import org.springframework.lang.NonNull;
-import org.springframework.lang.Nullable;
+package org.example.simple1;
 
 public class UserService {
     private UserService() {}

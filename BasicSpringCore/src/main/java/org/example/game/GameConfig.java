@@ -1,4 +1,4 @@
-package org.example.config;
+package org.example.game;
 
 import org.example.game.*;
 import org.springframework.context.annotation.Bean;

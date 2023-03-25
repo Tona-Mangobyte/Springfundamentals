@@ -3,10 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="hello" class="org.example.model.Hello" />
+    <bean id="hello" class="org.example.simple1.Hello" />
 
-    <bean id="userService" name="userService" class="org.example.services.UserService">
+    <bean id="userService" name="userService" class="org.example.simple1.UserService">
         <constructor-arg name="userRepository" ref="userRepository" />
     </bean>
-    <bean id="userRepository" class="org.example.repositories.UserRepository" />
+    <bean id="userRepository" class="org.example.simple1.UserRepository" />
 </beans>
