@@ -21,16 +21,28 @@ public class App
 
     public static void main( String[] args )
     {
-        ApplicationContext context = new ClassPathXmlApplicationContext("simple.xml");
-        UserService userService = null;
+        UserService userService;
+        ApplicationContext context;
+        // context = new ClassPathXmlApplicationContext("simple.xml");
         // Hello hello = (Hello) context.getBean("hello");
         // Hello hello = context.getBean("hello", Hello.class);
         // hello.sayHello();
-        userService = context.getBean("userService", UserService.class);
+        /*userService = context.getBean("userService", UserService.class);
         userService.sayHello();
+        System.out.println("XML Config: Count beans: "+ context.getBeanDefinitionCount());
+        for (String name :
+                context.getBeanDefinitionNames()) {
+            System.out.println(name);
+        }*/
 
         context = new AnnotationConfigApplicationContext(SimpleConfig.class);
         userService = context.getBean("userService", UserService.class);
         userService.sayHello();
+
+        System.out.println("Annotation Config Count beans: "+ context.getBeanDefinitionCount());
+        for (String name :
+                context.getBeanDefinitionNames()) {
+            System.out.println(name);
+        }
     }
 }

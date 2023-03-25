@@ -5,7 +5,7 @@
 
     <bean id="hello" class="org.example.model.Hello" />
 
-    <bean id="userService" class="org.example.services.UserService">
+    <bean id="userService" name="userService" class="org.example.services.UserService">
         <constructor-arg name="userRepository" ref="userRepository" />
     </bean>
     <bean id="userRepository" class="org.example.repositories.UserRepository" />
