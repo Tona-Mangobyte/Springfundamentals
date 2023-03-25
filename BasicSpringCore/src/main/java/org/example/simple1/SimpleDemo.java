@@ -1,7 +1,5 @@
 package org.example.simple1;
 
-import org.example.simple1.SimpleConfig;
-import org.example.simple1.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -10,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  *
  */
 // @ComponentScan(basePackages = { "org.example" })
-public class App 
+public class SimpleDemo
 {
 
     public static void main( String[] args )
