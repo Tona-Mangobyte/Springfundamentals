@@ -15,20 +15,22 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Hello world!
  *
  */
-@Configuration
-@ComponentScan(basePackages = { "org.example" })
+// @ComponentScan(basePackages = { "org.example" })
 public class App 
 {
 
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("simple.xml");
+        UserService userService = null;
         // Hello hello = (Hello) context.getBean("hello");
-        Hello hello = context.getBean("hello", Hello.class);
-        hello.sayHello();
+        // Hello hello = context.getBean("hello", Hello.class);
+        // hello.sayHello();
+        userService = context.getBean("userService", UserService.class);
+        userService.sayHello();
 
         context = new AnnotationConfigApplicationContext(SimpleConfig.class);
-        UserService userService = context.getBean("userService", UserService.class);
+        userService = context.getBean("userService", UserService.class);
         userService.sayHello();
     }
 }

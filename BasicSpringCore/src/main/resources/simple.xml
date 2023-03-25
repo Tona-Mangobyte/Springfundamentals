@@ -4,4 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="hello" class="org.example.model.Hello" />
+
+    <bean id="userService" class="org.example.services.UserService">
+        <constructor-arg name="userRepository" ref="userRepository" />
+    </bean>
+    <bean id="userRepository" class="org.example.repositories.UserRepository" />
 </beans>
