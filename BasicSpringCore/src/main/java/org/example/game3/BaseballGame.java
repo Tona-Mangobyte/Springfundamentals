@@ -36,4 +36,9 @@ public class BaseballGame implements Game {
                 getHomeTeam().getName() :
                 getAwayTeam().getName();
     }
+
+    @Override
+    public String toString() {
+        return "Game: " + getHomeTeam().getName() + " And " + getAwayTeam().getName();
+    }
 }
