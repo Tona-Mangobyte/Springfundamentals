@@ -1,3 +1,4 @@
+/*
 package org.example.config;
 
 import org.springframework.context.annotation.Bean;
@@ -21,10 +22,12 @@ public class JdbcConfiguration extends AbstractJdbcConfiguration {
         return new NamedParameterJdbcTemplate(dataSource());
     }
 
-    /*@Bean
+
+    @Bean
     PlatformTransactionManager transactionManager() {
         return new DataSourceTransactionManager(dataSource());
-    }*/
+    }
+
 
     @Bean
     public DataSource dataSource() {
@@ -41,3 +44,4 @@ public class JdbcConfiguration extends AbstractJdbcConfiguration {
         return new JdbcTemplate(dataSource());
     }
 }
+*/
