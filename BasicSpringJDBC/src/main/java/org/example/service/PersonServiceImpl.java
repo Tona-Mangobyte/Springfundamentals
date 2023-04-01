@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -25,7 +26,7 @@ public class PersonServiceImpl implements PersonService{
     @Override
     public Person getPerson(Integer ID) {
         return jdbcTemplate.queryForObject(
-                "SELECT * FROM person WHERE ID = ?", new Object[] { ID }, new PersonRowMapper());
+                "SELECT * FROM person WHERE ID = ?", new PersonRowMapper(), new Object[]{ID});
     }
 
     @Override
