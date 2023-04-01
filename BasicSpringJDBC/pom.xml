@@ -30,6 +30,12 @@
         <artifactId>spring-beans</artifactId>
         <version>6.0.7</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jdbc -->
+      <dependency>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-jdbc</artifactId>
+          <version>3.0.4</version>
+      </dependency>
       <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
       <dependency>
         <groupId>org.springframework</groupId>
