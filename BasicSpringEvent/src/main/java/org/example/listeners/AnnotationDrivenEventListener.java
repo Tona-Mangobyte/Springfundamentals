@@ -19,7 +19,7 @@ public class AnnotationDrivenEventListener {
         System.out.println("Handling account create event " + event.getAccount().getId());
     }
 
-    @EventListener(condition = "#event.success")
+    /*@EventListener(condition = "#event.success")
     public void handleSuccessful(GenericSpringEvent<Account> event) {
         System.out.println("Handling generic event success.");
     }
@@ -27,5 +27,5 @@ public class AnnotationDrivenEventListener {
     @EventListener(condition = "#event.failure")
     public void handleFailure(GenericSpringEvent<Account> event) {
         System.out.println("Handling generic event failure");
-    }
+    }*/
 }
