@@ -1,8 +1,14 @@
-package org.example.entity;
+package org.example.persistence.entity;
+
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 
+@Entity
 public class Account {
     private Long id;
     private BigDecimal balance;
@@ -13,6 +19,7 @@ public class Account {
         this.balance = balance;
     }
 
+    @Id
     public Long getId() {
         return id;
     }
@@ -21,6 +28,7 @@ public class Account {
         this.id = id;
     }
 
+    @Column
     public BigDecimal getBalance() {
         return balance;
     }
